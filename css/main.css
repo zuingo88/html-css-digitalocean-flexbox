@@ -103,10 +103,12 @@ ul li {
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.4s;
 }
 
 a:hover {
   color: #006AFF;
+  text-decoration: underline;
 }
 
 a.terms,
@@ -123,6 +125,11 @@ a.terms:hover,
 #features a:hover,
 #development a:hover {
   color: #0F0091;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
 }
 
 .blue_button {
@@ -132,13 +139,12 @@ a.terms:hover,
   font-weight: bold;
   background-color: white;
   border: solid 2px #006AFF;
-
+  transition: 0.4s;
 }
 
 .blue_button:hover {
   color: white;
   background-color: #006AFF;
-  transition: 0.3s;
 }
 
 
@@ -247,12 +253,19 @@ header .hamburger a:hover {
 
 .jumbotron .form input {
   padding: 5px;
+  border: solid 1px grey;
   border-radius: 5px;
 }
 
 #crea_account {
+  width: 100%;
   color: white;
   background-color: #006AFF;
+}
+
+#crea_account:hover {
+  color: #006AFF;
+  background-color: lightgrey;
 }
 
 #sign_google {
@@ -263,4 +276,33 @@ header .hamburger a:hover {
   width: 20px;
   position: absolute;
   left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* COLLABORAZIONI */
+#collaborazioni .cinta_sette {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#collaborazioni h6 {
+  font-size: 14px;
+  line-height: 16.8px;
+  text-transform: uppercase;
+  color: rgb(91, 105, 135)
+}
+
+.blocco_partner {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logo_partner {
+  padding: 2px;
+  flex-shrink: 1;
+}
+
+.logo_partner img {
+  width: 100%;
 }
