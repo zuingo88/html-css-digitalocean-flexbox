@@ -65,7 +65,21 @@
 }
 
 .text_darkblue {
-  color: color: #031b4e;
+  color: #031b4e;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 39.6px;
+  letter-spacing: -1px;
+  color: #031b4e;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 34.6px;
+  letter-spacing: -1px;
+  color: #031b4e;
 }
 
 .small_p {
@@ -75,7 +89,19 @@
 .p_nav {
   font-size: 14px;
   line-height: 21px;
+  letter-spacing: -1px;
   color: rgb(3, 27, 79);
+}
+
+.p_card {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.p_h2 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -1px;
 }
 
 .text_left {
@@ -247,7 +273,7 @@ header .hamburger a:hover {
   margin-bottom: 5px;
 }
 
-.jumbotron .form > h2:last-of-type {
+.jumbotron .form > h3:last-of-type {
   color: #006AFF;
 }
 
@@ -305,4 +331,56 @@ header .hamburger a:hover {
 
 .logo_partner img {
   width: 100%;
+}
+
+/* SECTION DEPLOY */
+#deploy {
+  margin-top: 50px;
+  margin-bottom: 50px
+}
+
+#deploy h2 {
+  margin-bottom: 10px;
+}
+
+/* ul */
+#deploy ul {
+  margin-top: 10px;
+}
+
+#deploy ul li {
+  padding-left: 10px;
+  line-height: 40px;
+  border-left: solid 2px lightgrey;
+}
+
+#deploy ul li:hover {
+  border-left: solid 2px #006AFF;
+}
+
+#deploy ul li a:hover {
+  color: black;
+}
+
+/* blocco deploy */
+.blocco_deploy {
+  margin-top: 50px;
+}
+
+/* blocco card */
+.blocco_card {
+  width: 67%;
+}
+
+.blocco_card {
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 46%;
+  margin-bottom: 25px;
+}
+
+.card img {
+  margin-bottom: 10px;
 }
