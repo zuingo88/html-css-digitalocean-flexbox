@@ -9,7 +9,7 @@
 /* REGOLE RICORRENTI */
 
 /* strutturali */
-.page_container {
+.container_lg {
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -27,6 +27,11 @@
 .cinta_sette {
   width: 75%;
   margin: auto;
+}
+
+/* regole flex */
+.flex {
+  display: flex;
 }
 
 .fbet {
@@ -63,10 +68,26 @@
   color: color: #031b4e;
 }
 
+.small_p {
+  font-size: 12px;
+}
+
 .p_nav {
   font-size: 14px;
   line-height: 21px;
   color: rgb(3, 27, 79);
+}
+
+.text_left {
+  text-align: left;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_right {
+  text-align: right;
 }
 
 /* elementi specifici */
@@ -120,13 +141,24 @@ a.terms:hover,
   transition: 0.3s;
 }
 
+
+
 /* HEADER */
 header {
   background-image: url(../img/jumbo.svg);
 }
 
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* nav */
 header nav .cinta_otto {
-  display: flex;
   height: 60px;
 }
 
@@ -138,7 +170,6 @@ img.header_logo {
 
 /* liste */
 .header_nav_list {
-  display: flex;
   width: 100%;
 }
 
@@ -160,4 +191,76 @@ header .hamburger a {
 header .hamburger a:hover {
   color: white;
   background-color: #006AFF;
+}
+
+/* jumbotron */
+.jumbotron {
+  padding-top: 60px;
+}
+
+.jumbotron .cinta_otto {
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* titolo */
+.main_title {
+  width: 55%;
+}
+
+.main_title h1 {
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 69.6px;
+  vertical-align: baseline;
+  letter-spacing: -1px;
+}
+
+.main_title p {
+  font-size: 24px;
+  line-height: 36px;
+  vertical-align: baseline;
+  letter-spacing: -1px;
+}
+
+/* form */
+.jumbotron .form {
+  width: 40%;
+  border-radius: 5px;
+}
+
+.jumbotron .form {
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.form * {
+  margin-bottom: 5px;
+}
+
+.jumbotron .form > h2:last-of-type {
+  color: #006AFF;
+}
+
+.jumbotron .form input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#crea_account {
+  color: white;
+  background-color: #006AFF;
+}
+
+#sign_google {
+  position: relative;
+}
+
+#sign_google img {
+  width: 20px;
+  position: absolute;
+  left: 5px;
 }

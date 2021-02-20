@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name=“viewport” content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <title>zuingo - oceanflex</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name=“viewport” content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>zuingo - oceanflex</title>
+</head>
 
-  <body>
+<body>
 
-    <div class="page_container">
+  <!-- HEADER -->
+  <header>
 
-      <!-- HEADER -->
-      <header>
 
-        <nav class="back_white">
 
-          <div class="cinta_otto fbet itemcenter">
+    <nav class="back_white">
 
-            <!-- logo -->
-            <img class="header_logo" src="img/logo.png" alt="logo">
+      <div class="container_lg">
 
-            <!-- liste -->
-            <div class="header_nav_list fbet itemcenter p_nav">
+        <div class="cinta_otto flex fbet itemcenter">
 
-              <ul class="inline">
-                <li><a href="#">products <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">customers</a></li>
-                <li><a href="#">community <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">pricing</a></li>
-              </ul>
+          <!-- logo -->
+          <img class="header_logo" src="img/logo.png" alt="logo">
 
-              <ul class="inline">
-                <li><a href="#">docs</a></li>
-                <li><a href="#">support <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">login</a></li>
-                <li><a href="#"><button class="blue_button" type="button" name="button">Sign Up</button> </a></li>
-              </ul>
+          <!-- liste -->
+          <div class="header_nav_list flex fbet itemcenter p_nav">
 
-            </div>
+            <ul class="inline">
+              <li><a href="#">products <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">customers</a></li>
+              <li><a href="#">community <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">pricing</a></li>
+            </ul>
 
-            <div class="hamburger p_nav">
-              <a href="#"><i class="fas fa-bars"></i></a>
-            </div>
+            <ul class="inline">
+              <li><a href="#">docs</a></li>
+              <li><a href="#">support <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">login</a></li>
+              <li><a href="#"><button class="blue_button" type="button" name="button">Sign Up</button> </a></li>
+            </ul>
 
           </div>
 
-        </nav>
-
-        <div class="jumbotron">
+          <div class="hamburger p_nav">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </div>
 
         </div>
 
-      </header>
+      </div><!-- fine container_lg -->
 
-    </div><!-- fine page_container -->
+    </nav>
 
-  </body>
+    <!-- jumbotron -->
+    <div class="jumbotron">
+
+      <div class="container_lg">
+
+        <div class="cinta_otto flex fbet">
+
+          <div class="main_title text_white text_left">
+            <h1>The simplest cloud platform for developers & teams</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.</p>
+          </div>
+
+          <div class="form flex back_white text_center">
+            <h2>Deploy your app in seconds.</h2>
+            <h2>Get started now.</h2>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <button id="crea_account" type="submit" class="btn btn-default form-control blue_button">Create your account</button>
+            <button id="sign_google" type="submit" class="btn btn-default form-control blue_button"><img src="img/google-icon.png" alt=""></img>Sign up with Google</button>
+            <p class="small_p">By signing up you agree to the <a class="terms" href="#">Terms of Service</a>.</p>
+          </div>
+
+        </div><!-- fine cinta_otto -->
+      </div><!-- fine container_lg -->
+    </div><!-- fine jumbotron -->
+
+  </header>
+
+</body>
 </html>
