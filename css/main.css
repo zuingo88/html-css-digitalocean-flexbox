@@ -1,0 +1,163 @@
+* {
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+}
+
+/* REGOLE RICORRENTI */
+
+/* strutturali */
+.page_container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.cinta_nove {
+  width: 95%;
+  margin: auto;
+}
+
+.cinta_otto {
+  width: 85%;
+  margin: auto;
+}
+
+.cinta_sette {
+  width: 75%;
+  margin: auto;
+}
+
+.fbet {
+  justify-content: space-between;
+}
+
+.itemcenter {
+  align-items: center;
+}
+
+/* colore di sfondo */
+.back_white {
+  background-color: white;
+}
+
+.back_grey {
+  background-color: #F3F5F9;
+}
+
+.back_blue {
+  background-image: linear-gradient(to bottom, #0800c2, #0b00b1, #0d01a0, #0e0190, #0e0180);
+}
+
+/* testi */
+.text_white {
+  color: white;
+}
+
+.text_grey {
+  color: #5b6987;
+}
+
+.text_darkblue {
+  color: color: #031b4e;
+}
+
+.p_nav {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(3, 27, 79);
+}
+
+/* elementi specifici */
+ul li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+.inline li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #006AFF;
+}
+
+a.terms,
+#collaborazioni a,
+#designed a,
+#features a,
+#development a {
+  color: #006AFF;
+}
+
+a.terms:hover,
+#collaborazioni a:hover,
+#designed a:hover,
+#features a:hover,
+#development a:hover {
+  color: #0F0091;
+}
+
+.blue_button {
+  padding: 5px;
+  border-radius: 5px;
+  color: #006AFF;
+  font-weight: bold;
+  background-color: white;
+  border: solid 2px #006AFF;
+
+}
+
+.blue_button:hover {
+  color: white;
+  background-color: #006AFF;
+  transition: 0.3s;
+}
+
+/* HEADER */
+header {
+  background-image: url(../img/jumbo.svg);
+}
+
+header nav .cinta_otto {
+  display: flex;
+  height: 60px;
+}
+
+/* logo */
+img.header_logo {
+  height: 40px;
+  padding-right: 100px;
+}
+
+/* liste */
+.header_nav_list {
+  display: flex;
+  width: 100%;
+}
+
+.header_nav_list li {
+  padding-right: 10px;
+}
+
+/* hamburger */
+header .hamburger a {
+  padding: 4px;
+  border: solid 2px #006AFF;
+  border-radius: 5px;
+  webkit-box-shadow: 0px 1px 5px 0px #006AFF;
+  -moz-box-shadow: 0px 1px 5px 0px #006AFF;
+  box-shadow: 0px 1px 5px 0px #006AFF;
+  display: none;
+}
+
+header .hamburger a:hover {
+  color: white;
+  background-color: #006AFF;
+}
