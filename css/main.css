@@ -219,6 +219,10 @@ img.header_logo {
 }
 
 /* hamburger */
+header .hamburger {
+  display: none;
+}
+
 header .hamburger a {
   padding: 4px;
   border: solid 2px #006AFF;
@@ -226,7 +230,6 @@ header .hamburger a {
   webkit-box-shadow: 0px 1px 5px 0px #006AFF;
   -moz-box-shadow: 0px 1px 5px 0px #006AFF;
   box-shadow: 0px 1px 5px 0px #006AFF;
-  display: none;
 }
 
 header .hamburger a:hover {
@@ -270,6 +273,10 @@ header .hamburger a:hover {
 .jumbotron .form {
   width: 40%;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+
 }
 
 .jumbotron .form {
@@ -316,7 +323,7 @@ header .hamburger a:hover {
 }
 
 /* COLLABORAZIONI */
-#collaborazioni .cinta_sette {
+#collaborazioni {
   padding-top: 40px;
   padding-bottom: 30px;
 }
@@ -327,6 +334,7 @@ header .hamburger a:hover {
 }
 
 .blocco_partner {
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -372,6 +380,7 @@ header .hamburger a:hover {
 /* blocco deploy */
 .blocco_deploy {
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 /* blocco card */
@@ -409,6 +418,13 @@ header .hamburger a:hover {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.screen {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+
 }
 
 #designed .screen, .screen img {
@@ -617,4 +633,116 @@ ul.social_link li {
 .footer_list ul {
   margin-top: 10px;
   line-height: 20px;
+}
+
+/* VERSIONE MOBILE + SM */
+@media all and (max-width: 991px) {
+
+  /* REGOLE RICORRENTI */
+  .cinta_sette {
+    width: 90%;
+    margin: auto;
+  }
+
+  .cinta_otto {
+    width: 90%;
+    margin: auto;
+  }
+
+  .jumbotron .cinta_otto, #collaborazioni,
+  #deploy, #designed,
+  #features, #service,
+  #development, #start,
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+    /* HEADER */
+  img.header_logo {
+    padding-right: 0;
+  }
+
+  .header_nav_list {
+    display: none;
+  }
+
+  header .hamburger {
+    display: block;
+  }
+
+  .jumbotron .main_title,
+  .jumbotron .form {
+    width: 100%;
+  }
+
+  .jumbotron h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .main_title p {
+    font-size: 20px;
+  }
+
+  .jumbotron .form {
+    margin-top: 20px;
+  }
+
+  /* SECTION PARTNER */
+  .blocco_partner {
+    justify-content: space-around;
+  }
+
+  .logo_partner {
+    min-width: 150px;
+  }
+
+  /* SECTION DEPLOY */
+  .blocco_deploy, #deploy .card {
+    margin: 20px auto;
+  }
+
+  #deploy .blocco_deploy {
+    justify-content: center;
+  }
+
+  #deploy .blocco_deploy ul,
+  #deploy .blocco_card,
+  #deploy .card {
+    width: 100%;
+  }
+
+  /* SECTION DESIGNED */
+  .blocco_carousel {
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  /* CAROUSEL */
+  [class*=big_arrow_] {
+    font-size: 30px;
+  }
+
+  /* SECTION FEATURES */
+  #features .card {
+    width: 100%;
+  }
+
+  /* SECTION SERVICE */
+  .lista_left,
+  .lista_right {
+    width: 100%;
+  }
+
+  /* SECTION DEVELOPMENT */
+  #development .screen {
+    margin-top: 20px;
+  }
+
+  /* FOOTER */
+  .logo_footer,
+  .footer_list {
+    width: 100%;
+  }
 }
