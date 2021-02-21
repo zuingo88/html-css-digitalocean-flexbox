@@ -89,7 +89,7 @@ h3 {
 .p_nav {
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: -1px;
+  letter-spacing: -0.2px;
   color: rgb(3, 27, 79);
 }
 
@@ -383,4 +383,49 @@ header .hamburger a:hover {
 
 .card img {
   margin-bottom: 10px;
+}
+
+/*  SECTION DESIGNED */
+
+/* carousel */
+.blocco_carousel {
+  width: 60%;
+  margin: auto;
+}
+
+.screen, .screen img {
+  width: 100%;
+  height: auto;
+}
+
+.blocco_carousel {
+  position: relative;
+}
+
+/* frecce carousel */
+.big_arrow_left {
+  position: absolute;
+  top: 50%; left: -10%;
+  transform: translateY(-50%);
+  font-size: 45px;
+  color: #5b6987;
+}
+
+.big_arrow_right {
+  position: absolute;
+  top: 50%; right: -10%;
+  transform: translateY(-50%);
+  font-size: 45px;
+  color: #5b6987;
+}
+
+.big_arrow_left:hover,
+.big_arrow_right:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.screen_foot p {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
