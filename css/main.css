@@ -335,8 +335,8 @@ header .hamburger a:hover {
 
 /* SECTION DEPLOY */
 #deploy {
-  margin-top: 50px;
-  margin-bottom: 50px
+  padding-top: 50px;
+  padding-bottom: 50px
 }
 
 #deploy h2 {
@@ -368,7 +368,7 @@ header .hamburger a:hover {
 }
 
 /* blocco card */
-.blocco_card {
+#deploy .blocco_card {
   width: 67%;
 }
 
@@ -376,21 +376,31 @@ header .hamburger a:hover {
   flex-wrap: wrap;
 }
 
-.card {
+#deploy .card {
   width: 46%;
   margin-bottom: 25px;
 }
 
-.card img {
+#deploy .card img {
   margin-bottom: 10px;
 }
 
 /*  SECTION DESIGNED */
+#designed {
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+#designed h2 {
+  margin-bottom: 20px;
+}
 
 /* carousel */
 .blocco_carousel {
   width: 60%;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .screen, .screen img {
@@ -425,7 +435,32 @@ header .hamburger a:hover {
   cursor: pointer;
 }
 
-.screen_foot p {
+/* foot_carousel */
+.foot_carousel p {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/* SECTION FEATURES */
+#features {
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+#features h2 {
+  margin-bottom: 40px;
+}
+
+/* blocco card */
+#features .blocco_card {
+  width: 100%;
+}
+
+#features .card {
+  width: 30%;
+  margin-bottom: 25px;
+}
+
+#features .card img {
+  margin-bottom: 10px;
 }
