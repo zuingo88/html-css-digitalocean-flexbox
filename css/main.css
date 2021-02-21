@@ -635,8 +635,8 @@ ul.social_link li {
   line-height: 20px;
 }
 
-/* VERSIONE MOBILE + SM */
-@media all and (max-width: 991px) {
+/* VERSIONE MOBILE */
+@media all and (max-width: 767px) {
 
   /* REGOLE RICORRENTI */
   .cinta_sette {
@@ -744,5 +744,56 @@ ul.social_link li {
   .logo_footer,
   .footer_list {
     width: 100%;
+  }
+}
+
+/* VERSIONE TABLET */
+@media all and (min-width: 768px) and (max-width: 1169px) {
+  /* REGOLE RICORRENTI */
+  .cinta_sette {
+    width: 90%;
+    margin: auto;
+  }
+
+  .cinta_otto {
+    width: 90%;
+    margin: auto;
+  }
+
+  .jumbotron .cinta_otto, #collaborazioni,
+  #deploy, #designed,
+  #features, #service,
+  #development, #start,
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+    /* HEADER */
+  img.header_logo {
+    padding-right: 0;
+  }
+
+  .header_nav_list {
+    display: none;
+  }
+
+  header .hamburger {
+    display: block;
+  }
+
+  /* SECTION SERVICE */
+  .lista_left,
+  .lista_right {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .logo_footer {
+    width: 100%;
+  }
+
+  .footer_list {
+    width: 50%;
   }
 }
